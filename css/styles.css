@@ -460,6 +460,7 @@ header {
 
 .my-work {
     background-color: var(--clr-dark);
+    background-color: black;
     color: var(--clr-light);
     text-align: center;
 }
