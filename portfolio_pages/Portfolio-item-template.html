@@ -26,8 +26,8 @@
         <!-- Trialing using BEM nomenclature to define classes as follows - Block = nav, Element = nav__item, Modifier = nav--colour -->
         <header>
             <div class="logo">
-                <a href="../index.html">
-                    <img src="https://via.placeholder.com/150" alt="">
+                <a href="index.html">
+                    <img src="../img/CTS-Logo.png" alt="">
                 </a>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -35,11 +35,11 @@
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href='../index.html#contact' class="nav__link">Contact Me</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href='#contact' class="nav__link">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,7 +52,7 @@
             </h1>
             <!-- add a double hyphen when a modification is needed for the element -->
             <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="https://via.placeholder.com/600" alt="a placeholder picture of Cameron" class="intro__image">
+            <img src="../img/CTS-Logo.png" alt="CTS logo" class="intro__image logo-image">
         </section>
 
         <!-- When writing about the project, focus more on the insights gained from working on the project rather than the project details itself-->
@@ -72,30 +72,35 @@
             <img src="https://via.placeholder.com/1000x600" alt="">
         </div>
 
-        <!-- Footer -->
-        <footer class="footer" id="contact">
-            <a href="mailto:cameron.tebbenham@outlook.com" class="footer__link">Cameron.tebbenham@outlook.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a></li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a></li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://instagram.com">
-                        <i class="fab fa-instagram"></i>
-                    </a></li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a></li>
-            </ul>
-        </footer>
+       <!-- Footer -->
+       <footer class="footer" id="contact">
+        <a href="mailto:cameron.tebbenham@outlook.com" class="footer__link">Cameron.tebbenham@outlook.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io" target="_blank">
+                    <i class="fab fa-codepen"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://camerontebbenhamsmall.panel.uwe.ac.uk/wordpress/" target="_blank">
+                    <i class="fab fa-wordpress"></i>
+                </a></li>
+        </ul>
+    </footer>
 
-        <script src="../js/index.js" type="text/javascript"></script>
+    <a onclick="topFunction()" id="top-btn"><i class="fa fa-arrow-up"></i></a>
+    <script src="../js/index.js" type="text/javascript"></script>
         
     </body>
 
