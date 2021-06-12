@@ -22,82 +22,141 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
-    <body>
-        <!-- Trialing using BEM nomenclature to define classes as follows - Block = nav, Element = nav__item, Modifier = nav--colour -->
-        <header>
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/CTS-Logo.png" alt="">
-                </a>
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href='#contact' class="nav__link">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Introduction -->
-        <!-- Only use id for anchors / javascript -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Restaurant website<strong>House of Flavor<br></strong>
-            </h1>
-            <!-- add a double hyphen when a modification is needed for the element -->
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="../img/CTS-Logo.png" alt="CTS logo" class="intro__image logo-image">
-        </section>
-
-        <!-- When writing about the project, focus more on the insights gained from working on the project rather than the project details itself-->
-        <!-- Give a brief overview but show how different parts inspired personal growth and taught you more about the field you are working in -->
-        <div class="portfolio-item-individual">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
-            <img src="https://via.placeholder.com/1000x600" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
-            <img src="https://via.placeholder.com/1000x600" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
-            <img src="https://via.placeholder.com/1000x600" alt="">
+<body>
+    <!-- Trialing using BEM nomenclature to define classes as follows - Block = nav, Element = nav__item, Modifier = nav--colour -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/CTS-Logo.png" alt="">
+            </a>
         </div>
-
-        <!-- Footer -->
-        <footer class="footer" id="contact">
-            <a href="mailto:cameron.tebbenham@outlook.com" class="footer__link">Cameron.tebbenham@outlook.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a></li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a></li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://instagram.com">
-                        <i class="fab fa-instagram"></i>
-                    </a></li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a></li>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href='#contact' class="nav__link">Contact Me</a></li>
             </ul>
-        </footer>
-        
-        <a onclick="topFunction()" id="top-btn"><i class="fa fa-arrow-up"></i></a>
-        <script src="../js/index.js" type="text/javascript"></script>
-        
-    </body>
+        </nav>
+    </header>
+
+    <!-- Next and Previous buttons -->
+    <div id="portfolio-nav">
+        <a id="btn__next"><i class="btn__portfolio__nav fa fa-arrow-right"></i></a>
+        <a id="btn__previous"><i class="btn__portfolio__nav fa fa-arrow-left"></i></a>
+    </div>
+    
+
+<!-- Page 1 start -->
+<div class="portfolio-page page__show">
+    <!-- Introduction -->
+    <!-- Only use id for anchors / javascript -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Restaurant website<strong>House of Flavor<br></strong>
+        </h1>
+        <!-- add a double hyphen when a modification is needed for the element -->
+        <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
+        <img src="../img/CTS-Logo.png" alt="CTS logo" class="intro__image logo-image">
+    </section>
+
+    <!-- When writing about the project, focus more on the insights gained from working on the project rather than the project details itself-->
+    <!-- Give a brief overview but show how different parts inspired personal growth and taught you more about the field you are working in -->
+    <div class="portfolio-item-individual">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+        <img src="https://via.placeholder.com/1000x600" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+        <img src="https://via.placeholder.com/1000x600" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+        <img src="https://via.placeholder.com/1000x600" alt="">
+    </div>
+</div>
+<!-- Page 1 end -->
+
+<!-- Page 2 start -->
+<div class="portfolio-page">
+    <!-- Introduction -->
+    <!-- Only use id for anchors / javascript -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Creative Coding<strong>p5 JavaScript doodles<br></strong>
+        </h1>
+        <!-- add a double hyphen when a modification is needed for the element -->
+        <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
+        <img src="../img/CTS-Logo.png" alt="CTS logo" class="intro__image logo-image">
+    </section>
+
+    <!-- When writing about the project, focus more on the insights gained from working on the project rather than the project details itself-->
+    <!-- Give a brief overview but show how different parts inspired personal growth and taught you more about the field you are working in -->
+    <div class="portfolio-item-individual">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+        <img src="https://via.placeholder.com/1000x600" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+        <img src="https://via.placeholder.com/1000x600" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+        <img src="https://via.placeholder.com/1000x600" alt="">
+    </div>
+</div>
+<!-- Page 2 end -->
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <a href="mailto:cameron.tebbenham@outlook.com" class="footer__link">Cameron.tebbenham@outlook.com</a>
+        <div class="logo footer__logo">
+            <a href="../index.html">
+                <img src="../img/CTS-Logo.png" alt="">
+            </a>
+        </div>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://instagram.com">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                </a></li>
+        </ul>
+    </footer>
+
+
+    <!-- JavaScript Sources -->
+    <!-- <a onclick="topFunction()" id="top-btn"><i class="fa fa-arrow-up"></i></a> -->
+    <script src="../js/index.js" type="text/javascript"></script>
+    <script src="../js/portfolio_pages.js" type="text/javascript"></script>
+    
+</body>
 
 </html>
